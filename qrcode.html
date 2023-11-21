@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400&family=Lexend:wght@400;600;700&family=Poppins:ital,wght@0,300;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    style="
+      margin: 0;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      background: #ffffff;
+      font-size: 14px;
+    "
+  >
+    <div
+      style="
+        max-width: 680px;
+        margin: 0 auto;
+        padding: 45px 30px 60px;
+        background: #f4f7ff;
+        background-image: url(https://archisketch-resources.s3.ap-northeast-2.amazonaws.com/vrstyler/1661497957196_595865/email-template-background-banner);
+        background-repeat: no-repeat;
+        background-size: 800px 452px;
+        background-position: top center;
+        font-size: 14px;
+        color: #434343;
+      "
+    >
+      <header>
+        <table style="width: 100%">
+          <tbody>
+            <tr style="height: 0">
+              <td>
+                <!-- <img
+                  alt=""
+                  src="https://archisketch-resources.s3.ap-northeast-2.amazonaws.com/vrstyler/1663574980688_114990/archisketch-logo"
+                  height="30px"
+                /> -->
+              </td>
+              <td style="text-align: right">
+                <!-- <span style="font-size: 16px; line-height: 30px; color: #ffffff"
+                  >12 Nov, 2021</span
+                > -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </header>
+
+      <main>
+        <div
+          style="
+            margin: 0;
+            margin-top: 70px;
+            padding: 92px 30px 115px;
+            background: #ffffff;
+            border-radius: 30px;
+            text-align: center;
+          "
+        >
+          <div style="width: 100%; max-width: 489px; margin: 0 auto">
+            <h1
+              style="
+                margin: 0;
+                font-size: 24px;
+                font-weight: 500;
+                color: #1f1f1f;
+              "
+            >
+              Cảm ơn bạn đã đăng ký!
+            </h1>
+            <p
+              style="
+                margin: 0;
+                margin-top: 17px;
+                font-size: 16px;
+                font-weight: 500;
+              "
+            >
+              Xin chào,
+            </p>
+            <p
+              style="
+                margin: 0;
+                margin-top: 17px;
+                font-weight: 500;
+                letter-spacing: 0.56px;
+              "
+            >
+              Cảm ơn bạn đã chọn OTP Client. Quét mã QR dưới đây bằng app OTP
+              Client để hoàn tất quy trình đăng ký tài khoản. Không chia sẻ mã
+              này với người khác.
+            </p>
+            <img
+              class="qr"
+              src="data:image/png;base64,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"
+            />
+          </div>
+        </div>
+
+        <p
+          style="
+            max-width: 400px;
+            margin: 0 auto;
+            margin-top: 90px;
+            text-align: center;
+            font-weight: 500;
+            color: #8c8c8c;
+          "
+        >
+          Mọi thắc mắc xin liên hệ
+          <a
+            href="mailto:tunghghg@gmail.com"
+            style="color: #499fb6; text-decoration: none"
+            >tunghghg@gmail.com</a
+          >
+        </p>
+      </main>
+
+      <footer
+        style="
+          width: 100%;
+          max-width: 490px;
+          margin: 20px auto 0;
+          text-align: center;
+          border-top: 1px solid #e6ebf1;
+        "
+      >
+        <p
+          style="
+            margin: 0;
+            margin-top: 40px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #434343;
+          "
+        >
+          OTP Client
+        </p>
+        <!-- <p style="margin: 0; margin-top: 8px; color: #434343">
+          Address 540, City, State.
+        </p> -->
+        <div style="margin: 0; margin-top: 16px">
+          <a href="" target="_blank" style="display: inline-block">
+            <img
+              width="36px"
+              alt="Facebook"
+              src="https://archisketch-resources.s3.ap-northeast-2.amazonaws.com/vrstyler/1661502815169_682499/email-template-icon-facebook"
+            />
+          </a>
+          <a
+            href=""
+            target="_blank"
+            style="display: inline-block; margin-left: 8px"
+          >
+            <img
+              width="36px"
+              alt="Instagram"
+              src="https://archisketch-resources.s3.ap-northeast-2.amazonaws.com/vrstyler/1661504218208_684135/email-template-icon-instagram"
+          /></a>
+          <a
+            href=""
+            target="_blank"
+            style="display: inline-block; margin-left: 8px"
+          >
+            <img
+              width="36px"
+              alt="Twitter"
+              src="https://archisketch-resources.s3.ap-northeast-2.amazonaws.com/vrstyler/1661503043040_372004/email-template-icon-twitter"
+            />
+          </a>
+          <a
+            href=""
+            target="_blank"
+            style="display: inline-block; margin-left: 8px"
+          >
+            <img
+              width="36px"
+              alt="Youtube"
+              src="https://archisketch-resources.s3.ap-northeast-2.amazonaws.com/vrstyler/1661503195931_210869/email-template-icon-youtube"
+          /></a>
+        </div>
+        <p style="margin: 0; margin-top: 16px; color: #434343">
+          Copyright © 2022 Company. All rights reserved.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
